@@ -35,4 +35,3 @@ with open("raz.csv", "rb") as f:
 print(raz)
 
 ########
-input=

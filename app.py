@@ -24,9 +24,17 @@ def login():
 def wybory():
     if request.method == "POST":
         data = request.form
-        licz = data.get('licz')
-        if licz == 1:
-            return "czekthis"
+        licz = int(data.get('licz'))
+        valut= data.get('walut')
+        if valut == "dolar amerykański":
+            return str(licz * 4.5998)
+        if valut == "dolar australijski":
+            return str(licz * 3.168)
+        if valut == "dolar kanadyjski":
+            return str(licz * 3.548)
+        if valut == "funt szterling":
+            return str(licz * 5.3763)
+
     return render_template("wybory.html")
 
 
