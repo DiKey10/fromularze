@@ -6,7 +6,7 @@
 
 <p>Wybierz jedna walute z wielu.</p>
 
-<form action="/action_page.php">
+<form method="post" action="/wybory">
   <label for="wybor">Wybierz walute:</label>
   <select name="walut" id="walut">
     <option value="dolar amerykański">dolar amerykański</option>
@@ -20,14 +20,11 @@
     <option value="korona szwedzka">korona szwedzka</option>
     <option value="SDR">SDR</option>
   </select>
-
-  <form method="post" action="/login/">
   <div class="container">
     <label for="licz"><b>Ile PLN</b></label>
-    <input type="text" placeholder="Podaj ile trzeba PLN" name="hajs" required>
+    <input type="text" placeholder="Podaj ile trzeba PLN" name="licz" required>
   </div>
-
-  <br><br>
+  <br>
   <input type="submit" value="Przelicz">
 </form>
 

@@ -22,9 +22,12 @@ def login():
 
 @app.route("/wybor", methods=["GET", "POST"])
 def wybory():
+    if request.method == "POST":
+        data = request.form
+        licz = data.get('licz')
+        if licz == 1:
+            return "czekthis"
     return render_template("wybory.html")
-    wynik = 0
-
 
 
 if __name__ == "__main__":
