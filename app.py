@@ -34,7 +34,6 @@ def wybory():
             return str(licz * 3.548)
         if valut == "funt szterling":
             return str(licz * 5.3763)
-
     return render_template("wybory.html")
 
 
