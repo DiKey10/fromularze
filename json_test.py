@@ -21,3 +21,4 @@ with open("todo.pickle", 'wb') as f:
 with open("todo.pickle", "rb") as f:
     tasks = pickle.load(f)
 print(tasks)
+

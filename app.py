@@ -22,13 +22,10 @@ def login():
 
 @app.route("/wybor", methods=["GET", "POST"])
 def wybory():
-    response = requests.get("http://api.nbp.pl/api/exchangerates/tables/C?format=json")
-    data = response.json()[0]
-    print(data["rates"])
-
-
-
     return render_template("wybory.html")
+    wynik = 0
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
